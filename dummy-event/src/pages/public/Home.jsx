@@ -123,35 +123,34 @@ const Home = () => {
                 <div>
                     <h2 className='mt-[55px] text-4xl font-bold mb-6 ml-20'>Inspiring Event Suppliers</h2>
                     <div className='ml-20 flex gap-8 flex-wrap px-10 py-5'>
-                    <div className='h-[411px] w-[380px] border-[1px] shadow-md'>
-                        <div className='h-[250px] w-full border-[1px]'>
-                            <img src="https://cdn.eventplanner.net/imgs/adv-6751/13429-hp-mobile-sportspreker@2x.jpg" alt="" />
-                            <div className='m-5  border-[0px]'>
-                            <h3 className='font-bold '>SportSpeaker</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='h-[411px] w-[380px] border-[1px]  shadow-md'>
-                        <div className='h-[250px] w-full border-[1px] '>
-                            <img src="https://cdn.eventplanner.net/imgs/adv-1882/61767-hp-mobile-grouppda-nv@2x.jpg" alt="" />
-                            <div className='m-5  border-[0px] '>
-                            <h3 className='font-bold'> Group-PDA nv</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='h-[411px] w-[380px] border-[1px] shadow-md'>
-                        <div className='h-[250px] w-full border-[1px] '>
-                            <img src="https://cdn.eventplanner.net/imgs/adv-7712/73201-hp-mobile-daft-boutique-music-hotel@2x.jpg" alt="" />
-                            <div className='m-5  border-[0px]'>
-                                <h3 className='font-bold'> Daft Botique & Music Hotel</h3>
+                        <div className='h-[411px] w-[380px] border-[1px] shadow-md'>
+                            <div className='h-[250px] w-full border-[1px]'>
+                                <img src="https://cdn.eventplanner.net/imgs/adv-6751/13429-hp-mobile-sportspreker@2x.jpg" alt="" />
+                                <div className='m-5  border-[0px]'>
+                                <h3 className='font-bold '>SportSpeaker</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='h-[411px] w-[380px] border-[1px]  shadow-md'>
+                            <div className='h-[250px] w-full border-[1px] '>
+                                <img src="https://cdn.eventplanner.net/imgs/adv-1882/61767-hp-mobile-grouppda-nv@2x.jpg" alt="" />
+                                <div className='m-5  border-[0px] '>
+                                <h3 className='font-bold'> Group-PDA nv</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='h-[411px] w-[380px] border-[1px] shadow-md'>
+                            <div className='h-[250px] w-full border-[1px] '>
+                                <img src="https://cdn.eventplanner.net/imgs/adv-7712/73201-hp-mobile-daft-boutique-music-hotel@2x.jpg" alt="" />
+                                <div className='m-5  border-[0px]'>
+                                    <h3 className='font-bold'> Daft Botique & Music Hotel</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
                 </div>
 
             </div>

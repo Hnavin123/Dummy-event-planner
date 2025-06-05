@@ -14,7 +14,7 @@ const Venue = () => {
             <div className='w-full h-max flex items-center justify-center'>
                 <img src="https://images.cvent.com/44141df3992b4064b5f7a48295c5d70d/destinationguide/images/homepage/heroimages/b35347c0.usaregion.jpg?d=1600&f=webp&unique=true" alt="" />
             
-                <div className="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full max-w-xl px-0 ">
+                <div className="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full max-w-xl px-0 mt-44">
                     <div className='h-[250px] w-[600px] bg-white border'>
                             <div className="w-full h-[120px] bg-gray-100 ">
                                 <p className=" text-center pt-10 text-4xl font-medium">Explore your desired Venue!</p>

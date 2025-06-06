@@ -6,6 +6,7 @@ import Venue from '../pages/public/Venue';
 import Vendor from '../pages/public/Vendor';
 import Photo from '../pages/public/Photo';
 import About from '../pages/public/About';
+import Contact from '../pages/public/Contact';
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
         <Route path='/vendors' element={<Vendor />}></Route>
         <Route path='/photos' element={<Photo/>}></Route>
         <Route path='/about' element={<About/>}></Route>
+        <Route path='contact' element={<Contact/>}></Route>
       </Route>
     </Routes>
   );

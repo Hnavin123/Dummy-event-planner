@@ -5,7 +5,7 @@
     box-sizing: border-box;
  }
 
- html{
+ /* html{
     font-size: 62.5%;
     font-family: "urbanist";
  }
@@ -55,8 +55,9 @@
  }
  .ham-menu{
     display: none;
-    /* cursor: pointer; */
- }
+    /* cursor: pointer; 
+ } 
+ 
  @media screen and (max-width: 998px){
     .menu-web{
         display: none;
@@ -86,4 +87,42 @@
         }
     }
     
- }
+ } */
+
+
+
+
+
+ header{
+    padding: 15px 0px;
+    background-color: #000;
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.company-logo{
+    width: 200px;
+    height: 100px;
+}
+.company-logo img{
+    max-width: 100%;
+    height: auto;
+}
+.main-menu ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.main-menu ul li a{
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}

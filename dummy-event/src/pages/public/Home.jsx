@@ -2,15 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import BusinessEventCards from "../../components/EventCards/BusinessEventCards";
+import './Home.css';
+
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState("business");
-
+    const categories = [
+    { id: "business", label: "Business Event" },
+    { id: "conference", label: "Conference" },
+    { id: "weeding", label: "Weeding" },
+    { id: "birthday", label: "Birthday" },
+    { id: "others", label: "Others" },
+  ];
   return (
     <>
-      <div className="">
-        {/* <img src="https://cdn.eventplanner.net/imgs/adv-2772/46212-hp-sb-desktop-event-lounge@2x.jpg" alt="" />
-         */}
+      {/* <div className="">
+        <img src="https://cdn.eventplanner.net/imgs/adv-2772/46212-hp-sb-desktop-event-lounge@2x.jpg" alt="" />
+        
         <div className="">
           <h2 className="text-blue-50 text-[30px] mb-2">
             Find <span className="font-bold">best event planner</span> and
@@ -32,16 +40,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className='m-20 '>
-                <h2 className='text-4xl font-bold mb-6'>Getting Started</h2>
-                    <ul className="flex gap-6 text-gray-700 font-medium text-lg">
-                            <li className='hover:text-blue-500 cursor-pointer'><Link to='/venues'>Business Event</Link></li>
-                            <li className='hover:text-blue-500 cursor-pointer'><Link to='/vendors'>Weeding</Link></li>
-                            <li className='hover:text-blue-500 cursor-pointer'><Link to='/photos'>Birthday</Link></li>
-                            <li className='hover:text-blue-500 cursor-pointer'><Link to='/e-invite'>Conference</Link></li>
-                            <li className='hover:text-blue-500 cursor-pointer'><Link to='/about'>0nline Event</Link></li>
-                    </ul>
-            </div> */}
+
       <div className="mt-20 ml-20">
         <h2 className="text-4xl font-bold mb-6">Getting Started</h2>
         <ul className="flex gap-6 text-gray-700 font-medium text-lg">
@@ -200,7 +199,36 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
+      <section className="header-image image1">
+        <div className="ptext">
+          <div className="textBg">Find best event planner and event venues
+                <form class="search-form"><input type="text" placeholder="Search events, venues, vendors..." class="search-input"/>
+                  <button type="submit" class="search-button">Search</button>
+                </form>
+          </div>
+        </div>
+      </section>
+      
+      <div className="mt-20 ml-20">
+      <h2 className="text-4xl font-bold mb-6">Getting Started</h2>
+      <ul className="flex gap-6 text-gray-700 font-medium text-lg">
+        {categories.map((cat) => (
+          <li
+            key={cat.id}
+            className={`cursor-pointer hover:text-blue-500 ${
+              selectedCategory === cat.id ? "text-blue-600 font-bold" : ""
+            }`}
+            onClick={() => setSelectedCategory(cat.id)}
+          >
+            {cat.label}
+          </li>
+        ))}
+      </ul>
+    </div>
+
     </>
   );
 };

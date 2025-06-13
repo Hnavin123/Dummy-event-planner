@@ -1,0 +1,81 @@
+
+/* Fixed selector: chaining classes instead of space */
+.header-image.image1 {
+  background-image: url("https://cdn.eventplanner.net/imgs/adv-2772/46212-hp-sb-desktop-event-lounge@2x.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.image1 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.textBg {
+  color: white;
+  padding: 20px;
+}
+
+.section {
+  padding: 50px 80px;
+  text-align: center;
+}
+.ptext{
+    position: absolute;
+    /* top: 10%; */
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.search-form {
+  margin-top: 10px;
+  top: 50%;
+  width: 50%;
+  display: flex;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  color: #4a5568; 
+  outline: none;
+  border: none;
+}
+
+.search-button {
+  background-color: #2563eb; 
+  color: white;
+  padding: 0.75rem 1.5rem; 
+  border: none;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #1d4ed8; 
+}

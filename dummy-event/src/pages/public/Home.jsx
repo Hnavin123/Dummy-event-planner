@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import BusinessEventCards from "../../components/EventCards/BusinessEventCards";
 import './Home.css';
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {
@@ -15,221 +17,136 @@ const Home = () => {
     { id: "others", label: "Others" },
   ];
   return (
-    <>
-      {/* <div className="">
-        <img src="https://cdn.eventplanner.net/imgs/adv-2772/46212-hp-sb-desktop-event-lounge@2x.jpg" alt="" />
-        
-        <div className="">
-          <h2 className="text-blue-50 text-[30px] mb-2">
-            Find <span className="font-bold">best event planner</span> and
-            <span className="font-bold"> event venues</span>
-          </h2>
-          <form className="flex bg-white rounded-full shadow-lg overflow-hidden ">
-            <input
-              type="text"
-              placeholder="Search events, venues, vendors..."
-              className="flex-grow px-4 py-3 text-gray-700 outline-none"
-            />
-            <button
-              type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-r-full"
-            >
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-
-
-      <div className="mt-20 ml-20">
-        <h2 className="text-4xl font-bold mb-6">Getting Started</h2>
-        <ul className="flex gap-6 text-gray-700 font-medium text-lg">
-          <li
-            className={`cursor-pointer hover:text-blue-500 ${
-              selectedCategory === "business" ? "text-blue-600 font-bold" : ""
-            }`}
-            onClick={() => setSelectedCategory("business")}
-          >
-            Business Event
-          </li>
-          <li
-            className={`cursor-pointer hover:text-blue-500 ${
-              selectedCategory === "conference" ? "text-blue-600 font-bold" : ""
-            }`}
-            onClick={() => setSelectedCategory("conference")}
-          >
-            {" "}
-            Conference
-          </li>
-
-          <li
-            className={`cursor-pointer hover:text-blue-500 ${
-              selectedCategory === "weeding" ? "text-blue-600 font-bold" : ""
-            }`}
-            onClick={() => setSelectedCategory("weeding")}
-          >
-            {" "}
-            Weeding
-          </li>
-
-          <li
-            className={`cursor-pointer hover:text-blue-500 ${
-              selectedCategory === "birthday" ? "text-blue-600 font-bold" : ""
-            }`}
-            onClick={() => setSelectedCategory("birthday")}
-          >
-            {" "}
-            Birthday
-          </li>
-          <li
-            className={`cursor-pointer hover:text-blue-500 ${
-              selectedCategory === "others" ? "text-blue-600 font-bold" : ""
-            }`}
-            onClick={() => setSelectedCategory("others")}
-          >
-            Others
-          </li>
-        </ul>
-      </div>
-
-      <div className="px-10">
-        {selectedCategory === "business" && <BusinessEventCards />}
-      </div>
-
-      <div className=" border-#e9e9ed mt-[32px] h-[620px] border-t-[1px] border-b-[2px]">
-        <h2 className="mt-[55px] text-4xl font-bold mb-6 ml-20">
-          Popular Cities
-        </h2>
-        <div className="ml-20 flex gap-8 flex-wrap px-10 py-5">
-          <div className="h-[411px] w-[380px] border-[1px] shadow-md">
-            <div className="h-[250px] w-full border-[1px]">
-              <img
-                src="https://cdn.eventplanner.net/imgs/city-BE1000/hpBE1000-mobile-brussel@2x.jpg"
-                alt=""
-              />
-              <div className="m-5  border-[0px]">
-                <h3>Mumbai</h3>
-                <li>Bnaquet Hall in Mumbai</li>
-                <li>Wedding Venues in Mumbai</li>
-                <li>Conference Venues in Mumbai</li>
-              </div>
+   <>
+        <section className="header-image image1">
+          <div className="ptext">
+            <div className="textBg">Find best event planner and event venues
+                  <form class="search-form"><input type="text" placeholder="Search events, venues, vendors..." class="search-input"/>
+                    <button type="submit" class="search-button">Search</button>
+                  </form>
             </div>
           </div>
-          <div className="h-[411px] w-[380px] border-[1px]  shadow-md">
-            <div className="h-[250px] w-full border-[1px] ">
-              <img
-                src="https://cdn.eventplanner.net/imgs/city-GBec1a/hpGBec1a-mobile-london@2x.jpg"
-                alt=""
-              />
-              <div className="m-5  border-[0px] ">
-                <h3>Mumbai</h3>
-                <li>Bnaquet Hall in Mumbai</li>
-                <li>Wedding Venues in Mumbai</li>
-                <li>Conference Venues in Mumbai</li>
-              </div>
-            </div>
-          </div>
-          <div className="h-[411px] w-[380px] border-[1px] shadow-md">
-            <div className="h-[250px] w-full border-[1px] ">
-              <img
-                src="https://cdn.eventplanner.net/imgs/city-NL1000/hpNL1000-mobile-amsterdam@2x.jpg"
-                alt=""
-              />
-              <div className="m-5  border-[0px]">
-                <h3>Mumbai</h3>
-                <li>Bnaquet Hall in Mumbai</li>
-                <li>Wedding Venues in Mumbai</li>
-                <li>Conference Venues in Mumbai</li>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-20 ">
-        <div>
-          <h2 className="mt-[55px] text-4xl font-bold mb-6 ml-20">
-            Inspiring Event Suppliers
-          </h2>
-          <div className="ml-20 flex gap-8 flex-wrap px-10 py-5">
-            <div className="h-[411px] w-[380px] border-[1px] shadow-md">
-              <div className="h-[250px] w-full border-[1px]">
-                <img
-                  src="https://cdn.eventplanner.net/imgs/adv-6751/13429-hp-mobile-sportspreker@2x.jpg"
-                  alt=""
-                />
-                <div className="m-5  border-[0px]">
-                  <h3 className="font-bold ">SportSpeaker</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis id nisi nihil doloribus officiis molestiae.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="h-[411px] w-[380px] border-[1px]  shadow-md">
-              <div className="h-[250px] w-full border-[1px] ">
-                <img
-                  src="https://cdn.eventplanner.net/imgs/adv-1882/61767-hp-mobile-grouppda-nv@2x.jpg"
-                  alt=""
-                />
-                <div className="m-5  border-[0px] ">
-                  <h3 className="font-bold"> Group-PDA nv</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis id nisi nihil doloribus officiis molestiae.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="h-[411px] w-[380px] border-[1px] shadow-md">
-              <div className="h-[250px] w-full border-[1px] ">
-                <img
-                  src="https://cdn.eventplanner.net/imgs/adv-7712/73201-hp-mobile-daft-boutique-music-hotel@2x.jpg"
-                  alt=""
-                />
-                <div className="m-5  border-[0px]">
-                  <h3 className="font-bold"> Daft Botique & Music Hotel</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis id nisi nihil doloribus officiis molestiae.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-
-      <section className="header-image image1">
-        <div className="ptext">
-          <div className="textBg">Find best event planner and event venues
-                <form class="search-form"><input type="text" placeholder="Search events, venues, vendors..." class="search-input"/>
-                  <button type="submit" class="search-button">Search</button>
-                </form>
-          </div>
-        </div>
-      </section>
+        </section>
       
-      <div className="mt-20 ml-20">
-      <h2 className="text-4xl font-bold mb-6">Getting Started</h2>
-      <ul className="flex gap-6 text-gray-700 font-medium text-lg">
-        {categories.map((cat) => (
-          <li
-            key={cat.id}
-            className={`cursor-pointer hover:text-blue-500 ${
-              selectedCategory === cat.id ? "text-blue-600 font-bold" : ""
-            }`}
-            onClick={() => setSelectedCategory(cat.id)}
-          >
-            {cat.label}
-          </li>
-        ))}
-      </ul>
-    </div>
+        <section className="features-section">
+          <div className="features-container">
+            <div className="feature-box">
+              <h3>FRIENDLY TEAM</h3>
+              <p>Our experienced and enthusiastic team is always ready to make your event unforgettable.</p>
+            </div>
+            <div className="feature-box">
+              <h3>BEST VENUES</h3>
+              <p>We offer a wide range of top-rated venues that suit every occasion and budget.</p>
+            </div>
+            <div className="feature-box">
+              <h3>AWESOME EVENT</h3>
+              <p>From planning to execution, we create memorable and seamless event experiences.</p>
+            </div>
+          </div>
+        </section>
 
-    </>
+
+
+        <section className="info-section">
+          <div className="info-container">
+            <div className="info-text">
+              <span>ABOUT jaiswalevents</span>
+              <h2>Make Your Event Idea Come True</h2>
+              <p>
+                At Jaiswal Events, we turn your dreams into reality with seamless event planning and execution. As a leading event management company in Kolkata, we specialize in creating unforgettable experiences, whether it’s a corporate event, wedding, concert, or private celebration.
+                With a team of experts and a passion for perfection, we offer top-tier services, including event decorations, special effects, light & sound, entertainment, hospitality, manpower, logistics, and hampers. From concept to completion, we handle every detail, ensuring your event is flawless and memorable.
+              </p>
+            </div>
+            <div className="info-image">
+              <img
+                src="https://jaiswalevents.in/wp-content/uploads/2025/02/business-people-party-celebration-success-concept-XGXN6PU.jpg"
+                alt="Event Planning"
+              />
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <section className="services-section">
+          <h2 className="services-title">EVENT SERVICES WE PROVIDE</h2>
+          <div className="services-grid">
+            <div className="service-card">
+              <h3>Birthday Party</h3>
+              <p>Celebrate your special day with fun themes, cakes, and unforgettable memories.</p>
+            </div>
+            <div className="service-card">
+              <h3>Corporate Event</h3>
+              <p>Professional setup for conferences, launches, and team-building activities.</p>
+            </div>
+            <div className="service-card">
+              <h3>Wedding Planner</h3>
+              <p>Plan your dream wedding with perfect decor, venues, and arrangements.</p>
+            </div>
+            <div className="service-card">
+              <h3>Anniversary</h3>
+              <p>Re-live your love story with an elegant and intimate celebration.</p>
+            </div>
+            <div className="service-card">
+              <h3>Private Party</h3>
+              <p>Exclusive party setups tailored to your style, budget, and guest list.</p>
+            </div>
+            <div className="service-card">
+              <h3>Masquerade Party</h3>
+              <p>Add a touch of mystery and elegance to your evening with masked glamour.</p>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <section className="choose-us-section">
+          <div className="choose-us-container">
+            <div className="choose-us-images">
+              <img
+                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+                alt="Team Working"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                alt="Event Planning"
+              />
+            </div>
+            <div className="choose-us-text">
+              <h2>WHY CHOOSE US</h2>
+              <span>Very Responsible With Your Event</span>
+              <p>
+                At Jaiswal Events, we bring creativity, expertise, and precision to every occasion, making us the most trusted event management company in Kolkata. With years of experience, we specialize in designing unique and memorable events, whether it’s a wedding, corporate gathering, or private celebration. Our end-to-end event management covers everything from venue selection and decorations to logistics and entertainment, ensuring a hassle-free experience for our clients. We pride ourselves on delivering high-quality services, innovative concepts, and flawless execution with the help of our professional and friendly team. Committed to excellence, we turn your vision into reality, creating unforgettable moments with perfection in every detail.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        {/* <div className="mt-20 ml-20">
+          <h2 className="text-4xl font-bold mb-6">Getting Started</h2>
+          <ul className="flex gap-6 text-gray-700 font-medium text-lg">
+              {categories.map((cat) => (
+                <li
+                  key={cat.id}
+                  className={`cursor-pointer hover:text-blue-500 ${
+                    selectedCategory === cat.id ? "text-blue-600 font-bold" : ""
+                  }`}
+                  onClick={() => setSelectedCategory(cat.id)}
+                >
+                  {cat.label}
+                </li>
+              ))}
+          </ul>
+        </div> */}
+      
+  </>
   );
 };
 

@@ -3,7 +3,7 @@ import React from 'react'
 const Venue = () => {
     return (
         <>
-            <div className='w-full h-[200px] bg-white border'>
+            <div className='w-full h-[200px] bg-white border '>
                     <div className="w-full h-[200px] bg-gray-100 text-center pt-10">
                         <p className="text-3xl font-medium">Find Meeting Venues, Request Quotes, and Book Event Space</p>
                         <p className='mt-1 font-thin'>No commission, no charges, no fees.</p>

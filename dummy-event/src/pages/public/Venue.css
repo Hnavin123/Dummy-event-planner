@@ -1,0 +1,199 @@
+
+.venue-header {
+  width: 100%;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.venue-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.venue-header p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.venue-hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.venue-hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.venue-hero-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.venue-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.venue-overlay-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1;
+}
+
+.venue-overlay-box h3 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.venue-overlay-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.venue-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.venue-search input {
+  flex: 1 1 250px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.venue-search button {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.venue-search button:hover {
+  background-color: #1d4ed8;
+}
+
+
+
+.venue-cards-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.venue-cards-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.venue-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.venue-card {
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  background-color: white;
+  overflow: hidden;
+}
+
+.venue-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.venue-card-content {
+  padding: 1rem;
+}
+
+.venue-card-content h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.venue-card-content p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.75rem;
+}
+
+.venue-details {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.venue-details ul {
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+
+
+@media (max-width: 600px) {
+  .venue-hero-section {
+    max-height: 300px;
+  }
+
+  .venue-overlay-box {
+    padding: 20px;
+  }
+
+  .venue-overlay-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .venue-overlay-box p {
+    font-size: 0.95rem;
+  }
+
+  .venue-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .venue-search input,
+  .venue-search button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

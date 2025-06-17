@@ -1,13 +1,14 @@
 .footer-background {
-  height: 500px;
+  min-height: 300px; 
+  padding: 40px 20px;
   background-color: black;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
-  padding: 20px;
   color: white;
 }
+
 
 .footer-logo {
   display: flex;
@@ -24,4 +25,20 @@
 .footer-copy {
   font-size: 14px;
   color: #aaa;
+}
+
+
+@media (max-width: 768px) {
+  .footer-logo img {
+    height: 100px;
+  }
+
+  .footer-logo p, .footer-copy {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .footer-background {
+    padding: 30px 10px;
+  }
 }

@@ -1,21 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import BusinessEventCards from "../../components/EventCards/BusinessEventCards";
 import './Home.css';
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {
-  const [selectedCategory, setSelectedCategory] = useState("business");
-    const categories = [
-    { id: "business", label: "Business Event" },
-    { id: "conference", label: "Conference" },
-    { id: "weeding", label: "Weeding" },
-    { id: "birthday", label: "Birthday" },
-    { id: "others", label: "Others" },
-  ];
   return (
    <>
         <section className="header-image image1">
@@ -45,8 +33,6 @@ const Home = () => {
           </div>
         </section>
 
-
-
         <section className="info-section">
           <div className="info-container">
             <div className="info-text">
@@ -65,9 +51,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-
-
 
         <section className="services-section">
           <h2 className="services-title">EVENT SERVICES WE PROVIDE</h2>
@@ -99,53 +82,19 @@ const Home = () => {
           </div>
         </section>
 
-
-
-
-
         <section className="choose-us-section">
           <div className="choose-us-container">
             <div className="choose-us-images">
-              <img
-                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
-                alt="Team Working"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                alt="Event Planning"
-              />
+              <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" alt="Team Working"/>
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Event Planning"/>
             </div>
             <div className="choose-us-text">
               <h2>WHY CHOOSE US</h2>
               <span>Very Responsible With Your Event</span>
-              <p>
-                At Jaiswal Events, we bring creativity, expertise, and precision to every occasion, making us the most trusted event management company in Kolkata. With years of experience, we specialize in designing unique and memorable events, whether it’s a wedding, corporate gathering, or private celebration. Our end-to-end event management covers everything from venue selection and decorations to logistics and entertainment, ensuring a hassle-free experience for our clients. We pride ourselves on delivering high-quality services, innovative concepts, and flawless execution with the help of our professional and friendly team. Committed to excellence, we turn your vision into reality, creating unforgettable moments with perfection in every detail.
-              </p>
+              <p>At Jaiswal Events, we bring creativity, expertise, and precision to every occasion, making us the most trusted event management company in Kolkata. With years of experience, we specialize in designing unique and memorable events, whether it’s a wedding, corporate gathering, or private celebration. Our end-to-end event management covers everything from venue selection and decorations to logistics and entertainment, ensuring a hassle-free experience for our clients. We pride ourselves on delivering high-quality services, innovative concepts, and flawless execution with the help of our professional and friendly team. Committed to excellence, we turn your vision into reality, creating unforgettable moments with perfection in every detail. </p>
             </div>
           </div>
         </section>
-
-
-
-
-
-        {/* <div className="mt-20 ml-20">
-          <h2 className="text-4xl font-bold mb-6">Getting Started</h2>
-          <ul className="flex gap-6 text-gray-700 font-medium text-lg">
-              {categories.map((cat) => (
-                <li
-                  key={cat.id}
-                  className={`cursor-pointer hover:text-blue-500 ${
-                    selectedCategory === cat.id ? "text-blue-600 font-bold" : ""
-                  }`}
-                  onClick={() => setSelectedCategory(cat.id)}
-                >
-                  {cat.label}
-                </li>
-              ))}
-          </ul>
-        </div> */}
-      
   </>
   );
 };

@@ -48,11 +48,20 @@ const Venue = () => {
           </div>
 
           <div className="venue-card">
-            <img src="https://www.cvent.com/meeting-event-planning/_next/image?url=https%3A%2F%2Fimages.cvent.com%2FCSN%2Fb04828c6-e0c7-4044-9561-3f980d13292e%2Fimages%2F3d88fe1f11c74d7196edd005c4f1a98e!_!f77a14f4bed97422462843cfaea81837.jpg%3Fd%3D720&w=640&q=75" alt="Group-PDA nv" />
-            <div className="venue-card-content">
-              <h4>Group-PDA nv</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
-            </div>
+                <img src="https://www.cvent.com/meeting-event-planning/_next/image?url=https%3A%2F%2Fimages.cvent.com%2FCSN%2Fb04828c6-e0c7-4044-9561-3f980d13292e%2Fimages%2F3d88fe1f11c74d7196edd005c4f1a98e!_!f77a14f4bed97422462843cfaea81837.jpg%3Fd%3D720&w=640&q=75" alt="Group-PDA nv" />
+                <div className="venue-card-content">
+                    <h4>Group-PDA nv</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
+                    <div className="venue-details">
+                        <h5 className='text-purple-700 font-bold'>Venue Details</h5>
+                        <ul>
+                        <li>Capacity: 1000</li>
+                        <li>Location: Kolkata</li>
+                        <li>Type: Banquet Hall</li>
+                        <li>Price: $5000</li>
+                        </ul>
+                    </div>
+                </div>
           </div>
 
           <div className="venue-card">
@@ -60,6 +69,15 @@ const Venue = () => {
             <div className="venue-card-content">
               <h4>Daft Botique & Music Hotel</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id nisi nihil doloribus officiis molestiae.</p>
+                <div className="venue-details">
+                    <h5 className='text-purple-700 font-bold'>Venue Details</h5>
+                    <ul>
+                    <li>Capacity: 1000</li>
+                    <li>Location: Kolkata</li>
+                    <li>Type: Banquet Hall</li>
+                    <li>Price: $5000</li>
+                    </ul>
+              </div>
             </div>
           </div>
         </div>

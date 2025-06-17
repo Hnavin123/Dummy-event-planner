@@ -1,10 +1,12 @@
 
 /* Fixed selector: chaining classes instead of space */
-
+html,body{
+  overflow-x: hidden;
+}
 .header-image.image1 {
   /* margin-top: 120px; */
   background-image: url("https://cdn.eventplanner.net/imgs/adv-2772/46212-hp-sb-desktop-event-lounge@2x.jpg");
-  min-height: 700px;
+  height: 500px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,9 +34,15 @@
 .section {
   padding: 50px 80px;
   text-align: center;
+  position: relative;
 }
 .ptext{
-    position: absolute;
+    /* position: absolute; */
+      position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 10px;
     width: 100%;
     text-align: center;
     font-size: 27px;
@@ -116,6 +124,16 @@
     padding: 0.6rem;
   }
 }
+@media (max-width: 400px) {
+  .choose-us-container,
+  .info-container,
+  .services-grid,
+  .features-container {
+    gap: 20px !important;
+    padding: 0 10px;
+  }
+}
+
 
 
 
@@ -314,4 +332,12 @@
   font-size: 1rem;
   line-height: 1.6;
   color: #444;
+}
+
+
+@media (max-width: 400px) {
+  .info-text h2,
+  .choose-us-text span {
+    font-size: 2rem;
+  }
 }

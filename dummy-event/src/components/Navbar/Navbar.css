@@ -4,107 +4,27 @@
     padding: 0;
     box-sizing: border-box;
  }
-
- /* html{
-    font-size: 62.5%;
-    font-family: "urbanist";
- }
- p,li,a,button{
-    font-size: 1.7rem;
-    letter-spacing: .1rem;
- }
- li{
-    list-style: none;
- }
-   a{
-        color: black;
-        &:hover{
-            color: #0d6efd;
-            text-decoration: underline;
-        }
-    }
-   
- button{
-    cursor: pointer;
- }   
- header{
-    height: 10rem;
-    box-shadow: rgba(33,35,38,0.1 );
-    background-color: #d4e6f1;
-    width: 100%;
- }
- .container{
-    max-width: 100rem;
-    margin: auto;
-    height: 10rem;
- }
- .grid{
-    display: grid;
- }
- .navbar-grid{
-    grid-template-columns: .5fr 1fr;
-    align-items: center;
-    height: 10rem;
-    padding: 0 3.2rem;
-    
- }
- nav ul{
-    display: flex;
-    justify-content: flex-end;
-    gap: 3.2rem;
- }
- .ham-menu{
-    display: none;
-    /* cursor: pointer; 
- } 
+body{
+  margin: 0;
+}
  
- @media screen and (max-width: 998px){
-    .menu-web{
-        display: none;
-    }
-
-    .ham-menu{
-        display: inline-block;
-        text-align: end;
-    }
-    .menu-mobile{ 
-        position: absolute;
-        top: 10rem;
-        left: 0;
-        width: 100%;
-        box-shadow: rgba(0,0,0,0.25 );
-
-    }
-    .menu-mobile ul{ 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & li:first-child{
-            margin-top: 1.2rem;
-        }
-        & li:last-child{
-            margin-bottom: 1.2rem;
-        }
-    }
-    
- } */
-
-
-
-
-
 .header{
     height:120px;
-    padding: 15px 0px;
+    /* padding:15px 0px; */
     background-color: #000;
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 1000; 
+    margin: 0;
+    padding: 0;
 }
 .container{
-    max-width: 1200px;
+    
+    width: 100%;
     margin: 0px auto;
-    padding: 0px 15px;
+    padding: 0;
+    max-width: none;
+    /* padding: 0px 15px; */
 }
 .header-flex {
     display: flex;

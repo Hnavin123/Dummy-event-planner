@@ -1,0 +1,27 @@
+.footer-background {
+  height: 500px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  height: 150px;
+  object-fit: contain;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #aaa;
+}

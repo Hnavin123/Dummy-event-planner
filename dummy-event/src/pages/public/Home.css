@@ -4,7 +4,6 @@ html,body{
   overflow-x: hidden;
 }
 .header-image.image1 {
-  /* margin-top: 120px; */
   background-image: url("https://cdn.eventplanner.net/imgs/adv-2772/46212-hp-sb-desktop-event-lounge@2x.jpg");
   height: 500px;
   background-position: center;

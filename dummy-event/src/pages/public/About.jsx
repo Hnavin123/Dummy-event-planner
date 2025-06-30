@@ -62,6 +62,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      
 
       <div className="flex flex-col w-full h-[300px] bg-purple-800 items-center justify-center mt-10">
         <p className="text-yellow-500 text-lg font-semibold">Why Choose Us !</p>

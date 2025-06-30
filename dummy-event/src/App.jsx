@@ -1,4 +1,4 @@
-// import reactLogo from './assets/react.svg'
+
 import AppRoutes from "./routes/AppRoutes";
 import { BrowserRouter } from "react-router-dom";
 
@@ -7,6 +7,7 @@ function App() {
     <BrowserRouter>
       {/* <h1> Happy Ending</h1> */}
       <AppRoutes />
+      
     </BrowserRouter>
   );
 }
